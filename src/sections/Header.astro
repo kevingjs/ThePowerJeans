@@ -1,0 +1,24 @@
+---
+import { Logo } from '@icons';
+---
+
+<header>
+	<Logo />
+</header>
+
+<style>
+	header {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: absolute;
+		top: 0;
+		padding: 1em;
+		width: 25vw;
+		height: 100%;
+	}
+
+	header > :global(svg) {
+		width: 100%;
+	}
+</style>

@@ -1,0 +1,35 @@
+---
+import { Logo } from '@icons';
+import { Bouncy } from '@components';
+---
+
+<div class="splashscreen">
+	<Logo />
+	<Bouncy />
+</div>
+
+<style>
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		inset: 0;
+		background-color: #2dc0ec;
+		gap: 5em;
+		z-index: 2;
+	}
+
+	div > :global(.logo) {
+		width: 70vw;
+	}
+</style>
+
+<script>
+	window.addEventListener('load', () => {
+		setTimeout(() => {
+			document.querySelector('.splashscreen').remove();
+		}, 1000);
+	});
+</script>

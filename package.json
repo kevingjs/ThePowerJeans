@@ -1,0 +1,19 @@
+{
+	"name": "thepowerjeans",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev --host",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/vercel": "^7.3.4",
+		"astro": "4.4.11"
+	},
+	"devDependencies": {
+		"lightningcss": "^1.24.0"
+	}
+}

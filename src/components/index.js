@@ -1,0 +1,1 @@
+export { default as Bouncy } from './Bouncy.astro'

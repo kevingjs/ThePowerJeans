@@ -1,0 +1,127 @@
+---
+import { Footer, Header } from '@sections'
+
+interface Props {
+	description: string
+	title: string
+}
+
+const { title, description } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+		<head>
+			<title>{title}</title>
+
+			<meta charset="UTF-8" />
+			<meta name="description" content={description} />
+
+			<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+			<link rel="canonical" href="https://thepowerjeans.vercel.app" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+			<meta name="keywords" content="game, newjeans, kpop, powerpuff, girls" />
+
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:title" content={title} />
+			<meta name="twitter:description" content={description} />
+			<meta name="twitter:image" content="https://thepowerjeans.vercel.app/og.png" />
+
+			<meta name="og:image" content="https://thepowerjeans.vercel.app/og.png" />
+			<meta name="og:title" content={title} />
+			<meta name="og:description" content={description} />
+			<meta name="og:url" content="https://thepowerjeans.vercel.app/" />
+			<meta name="og:site_name" content="The Power Jeans" />
+			<meta name="og:type" content="website" />
+			<meta name="og:locale" content="en_US" />
+
+			<meta name="twitter:card" content="summary_large_image"/>
+
+			<meta name="robots" content="index, follow" />
+			<meta name="googlebot" content="index, follow" />
+		</head>
+
+		<body>
+			<slot />
+		</body>
+</html>
+
+<style is:global>
+	@font-face {
+		font-family: 'Upheaval';
+		src: url('/fonts/Upheaval.ttf');
+		font-style: normal;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		min-width: 0;
+		font: inherit;
+		user-select: none;
+		scroll-behavior: smooth;
+		overscroll-behavior: contain;
+		text-decoration: none;
+		list-style: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	:root {
+		--white: #e6e6e6;
+		--black: #0f1318;
+		--cursor-default: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=');
+		--cursor-pointer: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC');
+	}
+
+	*:link,
+	*:visited {
+		color: inherit;
+	}
+
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	img, video, canvas, audio, iframe, embed, object {
+		display: block;
+		height: auto;
+		max-width: 100%;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		text-wrap: balance;
+	}
+
+	p {
+		text-wrap: pretty;
+	}
+
+	.pointer {
+		cursor: var(--cursor-pointer) 12 0, pointer;
+	}
+
+	html {
+		cursor: var(--cursor-default), default;
+	}
+
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+		min-height: 100dvh;
+		font-family: 'Upheaval', system-ui, sans-serif;
+		color: var(--white);
+		background-color: var(--black);
+		overflow: hidden;
+	}
+</style>

@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SplashScreen, Footer, Header, Game } from '@sections'
+---
+
+<Layout 
+	title = "The Power Jeans"
+	description = "A Fan-made NewJeans X Powerpuff Girls game."
+>
+	<SplashScreen />
+	<Header />
+	<main>
+		<Game />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100vw;
+		height: 100vh;
+		background-image: url('../assets/ppj_bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	main::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-image: url('../assets/ppj_renders.webp');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		animation: floating 3s ease-in-out infinite alternate;
+		pointer-events: none;
+	}
+
+	@keyframes floating {
+		from {
+			transform: translateY(-2%);
+		}
+
+		to {
+			transform: translateY(2%);
+		}
+	}
+</style>
