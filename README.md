@@ -18,6 +18,7 @@
 ![JavaScript Badge]
 ![HTML5 Badge]
 ![CSS Badge]
+![astro-badge]
 
 <a href="https://github.com/kevingjs/ThePowerJeans/issues">Report bug</a>
 ·
@@ -30,6 +31,7 @@
 
 ## 🛠️ Stack
 
+- [![Astro][astro-badge]][astro-url] - The web framework for content-driven websites.
 - HTML, CSS & JavaScript.
 
 ## 🔑 License
@@ -47,6 +49,8 @@
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[astro-url]: https://astro.build/
+[astro-badge]: https://img.shields.io/badge/Astro-fff?style=for-the-badge&logo=astro&logoColor=bd303a&color=352563
 [Logo]: public/favicon.svg
 [JavaScript Badge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=for-the-badge
 [HTML5 Badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=000
