@@ -3,7 +3,7 @@
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
-		"baseUrl": "C:/Users/Administrator/Documents/Proyectos/Por Hacer/ThePowerJeans Project/ThePowerJeans",
+		"baseUrl": ".",
 		"paths": {
 			"@assets/*": [
 				"src/assets/*"
