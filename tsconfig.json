@@ -1,7 +1,9 @@
 {
 	"extends": "astro/tsconfigs/base",
 	"compilerOptions": {
-		"baseUrl": ".",
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"baseUrl": "C:/Users/Administrator/Documents/Proyectos/Por Hacer/ThePowerJeans Project/ThePowerJeans",
 		"paths": {
 			"@assets/*": [
 				"src/assets/*"

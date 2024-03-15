@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://thepowerjeans.vercel.app/">
 
-![Logo]
+![logo]
 
 </a>
 <h3><strong>The Power Jeans</strong></h3>
@@ -15,10 +15,11 @@
 
 <div align="center">
 
-![JavaScript Badge]
-![HTML5 Badge]
-![CSS Badge]
 ![astro-badge]
+![react-badge]
+![javascript-badge]
+![html-badge]
+![css-badge]
 
 <a href="https://github.com/kevingjs/ThePowerJeans/issues">Report bug</a>
 ·
@@ -32,7 +33,10 @@
 ## 🛠️ Stack
 
 - [![Astro][astro-badge]][astro-url] - The web framework for content-driven websites.
-- HTML, CSS & JavaScript.
+- [![React][react-badge]][react-url] - The library for web and native user interfaces.
+- [![JavaScript][javascript-badge]][javascript-url] - The programming language for the web.
+- [![HTML5][html-badge]][html-url] - The most basic building block of the Web.
+- [![CSS][css-badge]][css-url] - A language for specifying how documents are presented to users.
 
 ## 🔑 License
 
@@ -49,9 +53,14 @@
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[logo]: public/favicon.svg
 [astro-url]: https://astro.build/
-[astro-badge]: https://img.shields.io/badge/Astro-fff?style=for-the-badge&logo=astro&logoColor=bd303a&color=352563
-[Logo]: public/favicon.svg
-[JavaScript Badge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=for-the-badge
-[HTML5 Badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=000
-[CSS Badge]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=000
+[react-url]: https://react.dev/
+[html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[astro-badge]: https://img.shields.io/badge/Astro-fff?style=for-the-badge&logo=astro&logoColor=000&color=f041ff
+[react-badge]: https://img.shields.io/badge/React-fff?style=for-the-badge&logo=react&logoColor=000&color=149eca
+[javascript-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?logo=JavaScript&logoColor=000&style=for-the-badge
+[html-badge]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=000
+[css-badge]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=000
